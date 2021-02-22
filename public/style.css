@@ -1,0 +1,141 @@
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #e6e9ff;
+    margin: 2%;
+}
+
+/* index.html */
+.container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.home-header {
+	text-align: center;
+	padding: 20px;
+	background-color: #828BDB;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.home-container {
+	padding: 30px 40px;
+	background-color: #949CDF;
+}
+
+.home-container p {
+	margin-bottom: 20px;
+}
+
+.home-container .form-control {
+	margin-bottom: 20px;
+}
+
+.home-container label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.home-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.home-container select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+/* chat.html */
+.chat-container {
+    max-width: 80%;
+    background: white;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.chat-header {
+    background-color: #828BDB;
+    padding: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.chat-header h2 {
+    color: white;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #949CDF;
+    overflow-y: scroll;
+    color: white;
+    padding: 20px 20px 30px;
+    max-height: 400px;
+}
+
+.sidebar ul {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#roomHeading {
+    font-size: larger; 
+    font-weight: bold;   
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+}
+
+#usernamesUL {
+    padding: 1em;
+}
+
+.sidebar ul li {
+    list-style: none;
+} 
+
+.download {
+    display: flex;
+    justify-content: center;
+}
+
+.chatMessages {
+	padding: 30px;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.chat-form {
+    padding: 20px 30px;
+    background-color: #828BDB;
+}
+
+.messageArea {
+    display: flex;
+    width: 100%;
+}
+
+.messageArea input{
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* index.html and chat.html */
+.btn {
+    padding: 5px 15px;
+    background-color: #E6E9FF;
+    color: #667AFF;
+    border: 0;
+    font-size: large;
+}

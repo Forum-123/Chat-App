@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h2><i class="fa fa-commenting"></i> Chat App</h1>
+        </header>
+        <main class="content">
+            <div class="sidebar">
+                <h5><i class="fa fa-server"></i> Room Name:</h5>
+                <ul id="roomHeading"></ul>
+                <h5><i class="fa fa-users"></i> Users:</h5>
+                <ul id="usernamesUL"></ul>
+                <div class="download">
+                    <input type="button" value="Download Chat" onclick="downloadChat()"/>
+                </div>
+            </div>
+            <div class="chatMessages" id="chatMessages"></div>
+        </main>
+        <div class="chat-form shadow">
+            <form class="form-group messageArea mb-3">
+                <input type="text" id="txtMessage" class="form-control" placeholder="Enter message" autocomplete="off" required></input>
+                <button class="btn fa fa-paper-plane" onclick="sendMessageEventHandler()" style="margin-left: 10px;"> Send</button>
+            </form>
+        </div>
+        <div class="chat-form shadow">
+            <form class="form-group messageArea mb-3">
+                <input type="text" id="txtMessagePrivate" class="form-control" placeholder="Enter message" autocomplete="off" required></input>
+                <select id="membersDD"></select>
+                <button class="btn fa fa-paper-plane" value="sendMessagePrivately" onclick="sendMessagePrivatelyEventHandler()" style="margin-left: 10px;"> Send Privately</button>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+        integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
