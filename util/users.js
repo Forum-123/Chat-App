@@ -1,6 +1,6 @@
 const mongoClient = require("mongodb").MongoClient;
 var ObjectID = require("mongodb").ObjectID;
-var dbUrl = process.env.MONGODB_URI;
+var dbUrl = process.env.MONGODB_URI || 27017;
 
 var usersArray = []
 
