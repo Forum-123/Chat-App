@@ -1,6 +1,6 @@
 const mongoClient = require("mongodb").MongoClient;
 var ObjectID = require("mongodb").ObjectID;
-var dbUrl = "mongodb://localhost:27017/";
+var dbUrl = process.env.MONGODB_URI;
 
 var usersArray = []
 
