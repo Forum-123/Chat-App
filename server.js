@@ -125,7 +125,7 @@ io.on("connection", (socket) => {
 });
 
 // Starts server
-server.listen(PORT, (err) => {
+server.listen(process.env.PORT, '0.0.0.0', (err) => {
     if (!err)
         console.log(`Server is running on port ${PORT}`);
 });
