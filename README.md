@@ -22,4 +22,4 @@ cd Chat-App/
 
 - [ ] Currently, if a user refreshes the page, the application will crash.
 - [ ] The download history shows all the messages sent by any user publicly and privately in any room from the moment that user joined the application. However, it should only contain the messages sent by that user publicly or privately in the current room they are in as well as any public or private messages sent to them.
-- [ ] When a user clicks the download button, it notifies the other users in the room that the user has left the room when they have not. So that user is unable to send or receive any messages after they click the download button.
+- [ ] When a user clicks the download button, it notifies the other users in the room that the user has left the room when they have not. So that user is unable to send or receive any messages after they click the download button. The other users seem to remain in the room but they cannot leave as the application crashes and they stay in the database. The database has to be cleared manually for the user to rejoin the room with the same name after the application is redeployed.
